@@ -12,7 +12,7 @@ const translateSlice = createSlice({
   initialState,
   // Senkron aksiyonları tanımladık
   reducers: {
-    // Payload değerini text'e aktar
+    // Payload değerini texte aktar
     updateText: (state, action) => {
       state.text = action.payload;
     },
