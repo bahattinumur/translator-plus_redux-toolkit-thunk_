@@ -25,7 +25,7 @@ const translateSlice = createSlice({
 
     builder.addCase(translateText.rejected, (state, action) => {
       alert(
-        "An error occurred while processing. Please try again later"
+        "An error occurred while processing. Please try again later."
       );
       state.isLoading = false;
       state.isError = action.error;

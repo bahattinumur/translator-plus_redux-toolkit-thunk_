@@ -27,13 +27,13 @@ export const translateText = createAsyncThunk(
     params.set("target_language", targetLang.value);
     params.set("text", text);
 
-    // axios isstek ayarlarını belirle
+    // AXios istek ayarlarını belirle
     const options = {
       method: "POST",
       url: "https://text-translator2.p.rapidapi.com/translate",
       headers: {
         "content-type": "application/x-www-form-urlencoded",
-        "X-RapidAPI-Key": "PLEASE ENTER HERE YOUR API ",
+        "X-RapidAPI-Key": "PLEASE ENTER HERE YOUR API",
         "X-RapidAPI-Host": "text-translator2.p.rapidapi.com",
       },
       data: params,
